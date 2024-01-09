@@ -89,14 +89,14 @@ header {
     border-radius: 20px;
 }
 
-.button:hover{
+.button:hover {
     background-color: #a4a4a4;
     color: #000;
     border: 2px solid #b28756;
 }
 
 .menu-op {
-    display:none;
+    display: none;
 }
 
 
@@ -992,11 +992,13 @@ footer {
 }
 
 @media (min-width:801px) and (max-width:1160px) {
-    header{
-        width: 100vw;
+    header {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 0.6rem;
+        text-align: center;
+
     }
 
     .light {
@@ -1011,23 +1013,101 @@ footer {
         justify-content: center;
     }
 
+
+    .section-aboutus--left {
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-aboutus--left p {
+        font-size: 0.9rem;
+    }
+
     .section-premium--right img {
         display: none;
+    }
+
+    .section-aboutus--right {
+        width: 45vw;
+        padding: auto;
+
+    }
+
+    .section-aboutus--right img {
+        width: 23rem;
+    }
+
+    .button {
+        font-size: 1rem
+    }
+
+    .section-pricearea {
+        max-width: 100vw;
+        
+    }
+
+    .section-price .sliders {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: ;
+        height: 100%;
+        width: 100%;
+    }
+
+    .section-price .slide {
+        background-color: #fff;
+        margin: 10px;
+    }
+
+    .section-price--include {
+        font-size: 0.8rem;
+    }
+
+    .section-price .slideArea {
+        display: initial;
+        height: 100%;
+        color: #000;
+        text-align: center;
+        padding: 30px
     }
 
     .facts {
         flex-direction: column;
         padding-bottom: 30px;
+        margin-bottom: 25px;
     }
 
     footer {
         display: flex;
         background-color: #000;
-        gap: 53px;
+        padding: 10px;
+    }
+
+    .footer-area {
+        display: flex;
+        justify-content: center
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-area--item1 {
+        margin-right:0;
+        padding: 12px;
     }
 
     .footer-area--item2 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        text-align: center;
+        padding-right: 10px;
+        
+    }
+
+    .footer-area--item3 {
+        flex: 0;
     }
 
 }
@@ -1267,7 +1347,7 @@ footer {
 @media (max-width:450px) {
 
     /* menu */
-    
+
     header {
         justify-content: space-around;
     }
