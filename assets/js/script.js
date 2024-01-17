@@ -1,8 +1,10 @@
-function clicarMenu() {
-    let menuMob = document.querySelector('.menu-op');
-    let menu = document.querySelector('.menu');
+let menuMobile = document.querySelector('.menu-op');
+let menuNav = document.querySelector('.nav');
 
-    menuMob.addEventListener('click', () => {
-        menu.style.display = "flex";
-    });
-}
+menuMobile.addEventListener('click', () => {
+    if (menuNav.style.display == 'none' ) {
+        menuNav.style.display= 'flex'
+    } else {
+        menuNav.style.display= 'none'
+    }
+})
